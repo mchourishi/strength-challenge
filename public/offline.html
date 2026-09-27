@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Offline · Stronger Together</title>
+    <style>
+      :root { color-scheme: light dark; --bg: #f7f4f1; --ink: #18161b; --muted: #6e6873; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #0f0e12; --ink: #f6f3f8; --muted: #a6a0ae; } }
+      body { margin: 0; min-height: 100dvh; display: grid; place-items: center; background: var(--bg); color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; text-align: center; padding: 24px; }
+      h1 { font-size: 24px; margin: 12px 0 8px; }
+      p { color: var(--muted); margin: 0 0 24px; }
+      button { font: inherit; font-weight: 700; color: #fff; border: 0; border-radius: 16px; padding: 16px 28px;
+        background: linear-gradient(135deg, #ff5a36, #ff2e74); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div style="font-size: 44px">📶</div>
+      <h1>You're offline</h1>
+      <p>Reconnect to see your challenge and save workouts.</p>
+      <button onclick="location.reload()">Try again</button>
+    </main>
+  </body>
+</html>
